@@ -1,0 +1,73 @@
+/*KeyFrames = define uma animação*/
+/*KeyFrame identifier = se refere ao nome da animação*/
+/*As estapas são definidas pelas % porcentagens colocadas no bloco*/
+@keyframes mudaCor {
+    0%{
+    color: black;
+    }
+    25%{
+        color: burlywood;
+    }
+    50%{
+        color: blueviolet;
+
+    }
+    75%{
+        color: bisque;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes pertubacao {
+    0%{
+        top: 0%;
+        /*Background image = define uma imagem de fundo*/
+        background-image: url(../images/Sol.jpg);
+        background-size: cover;
+    }    
+    25%{
+        top: 10%;
+        background-color: aquamarine;
+        background-image: url(../images/Aves.jpeg);
+        background-size: cover;
+    }
+    50%{
+        top: 0%;
+        background-color: brown;
+        background-image: url(../images/Dog.jpg);
+        background-size: cover;
+    }
+}
+
+h1{
+    /*Animation name = nome da animação */
+    animation-name: mudaCor;
+    /*Animation duration = o quanto que o animação vai demorar*/
+    animation-duration: 1s;
+    /*Animation delay = o quantas vezes a animação vai demorar para iniciar*/
+    animation-delay: 1s;
+    /* animation iteration count = quantas vezes a animação irá executar*/
+    animation-iteration-count: infinite;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Animation: name, duration, time, delay*/
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    /*Position = mudar o posicionamento do elemento */
+    /*Absolute = fica fora da hierarquia e aceita coordenadas (top, bottom, left, right*/
+    position: absolute;
+    animation: pertubacao 5s infinite;
+    animation-name: pertubacao;
+    animation-duration: 5s;
+    background-color: blue;
+    animation-iteration-count: infinite;
+}
