@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.topico{
+    width: 70%;
+    background-color: azure;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.219);
+}
+dd{
+    margin: 5px;
+}
+dl ul {
+    list-style:none;
+}
+
+dl ul li{
+    background-color: black;
+    color: aliceblue;
+    padding: 3px;
+}
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: blueviolet;
+}
