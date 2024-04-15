@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Atividade</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="topico">
+        <h3>Seus Dados</h3>
+        <form action="#" method="get">
+            <div class="seusDados">
+            <label for="nomeDoUsuario">Nome do usuário</label>
+            <input required type="text" id="nomeDoUsuario">
+           </div>
+
+         <div class="seusDados">
+            <label for="emailDoUsuario">Insira o  seu email</label>
+            <input required placeholder="email@hotmail.com" type="email" id="emailDoUsuario">
+         </div>
+
+         <div class="seusDados">
+            <label for="telefoneDoUsuario">Digite o seu telefone</label>
+                <input placeholder="(DD) 9999-9999" required type="tel" id="telefoneDoUsuario">    
+        </div>
+
+         <div class="seusDados">
+            <label for="nascimentoDoUsuario">Data de Nascimento</label>
+            <input type="date" id="nascimentoDoUsuario">
+
+            <div class="seusDados">
+                <label for="numeroDoCartao">Numero do cartão</label>
+                <input placeholder="0000 0000 0000 0000" min="0" max="8" type="number" id="numeroDoCartao">
+            </div>
+         
+            <div class="seusDados">
+                <label for="cvDocartao">CV do cartão</label>
+                <input placeholder="000" min="0" max="3" type="number" id="cvDocartao">
+            </div>
+
+            <hr>
+
+            <div class="seusDados">
+                <h3> Endereço</h3>
+                <label for="nomeDoUsuario">Endereço 1</label>
+                <input required placeholder="Rua, Quadra, Modulo, casa" type="text" id="nomeDoUsuario">
+               </div>
+
+               <div class="seusDados">
+                <label for="nomeDoUsuario">Endereço 2</label>
+                <input required placeholder="Rua, Quadra, Modulo, casa" type="text" id="nomeDoUsuario">
+               </div>
+
+               <div class="seusDados">
+                <label for="nomeDoUsuario">Endereço 3</label>
+                <input required placeholder="Rua, Quadra, Modulo, casa" type="text" id="nomeDoUsuario">
+               </div>
+
+               <div class="espaco">
+                <label for="">Qual estado você mora</label>
+                <select id="estadoDoUsuario">
+                    <option value="">/</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+
+                <div class="seusDados">
+                <label for="nomeDoUsuario">Comprovante de Residencia</label>
+                 <input type="file" id="foto">
+                </div>
+
+                <div class="seusDados">
+                <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>
