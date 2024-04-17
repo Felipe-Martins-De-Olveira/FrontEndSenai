@@ -1,0 +1,187 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url(../Imagens/ImagensGeral/40dc178368b4b17b22d471bb917c483e.jpg);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#horder{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(63, 48, 48);
+    display: flex;
+    gap: 200px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+#imgTex{
+    display: flex;
+    gap: 200px;  
+}
+
+#imgTex p, #imgTex{
+    margin: 20px;
+}
+
+.dicasVid{
+    width: 25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.noticias{
+    width: 25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.equipamentos{
+    width: 25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.dicasVid img{
+    margin-left: 24%;
+    border-radius: 50% !important;
+    width: 200px
+    
+    
+}
+
+.noticias img{
+    margin-left: 28%;
+    border-radius: 50% !important;
+    width: 200px;
+}
+
+.equipamentos img{
+    margin-left: 28%;
+    border-radius: 50% !important;
+    width: 200px
+}
+
+h3{
+    justify-content: center; 
+}
+
+.vermais{
+    width: 100%;
+    border-color: black;
+    padding: 0.75rem;
+    border-width: 1px;
+    margin-left: 10%;
+}
+
+.dicasVid h3{
+    margin-left: 30%;
+}
+
+.noticias h3{
+    margin-left: 23%;
+}
+
+.equipamentos h3{
+    margin-left: 20%;
+
+}
+
+#agendamento{
+    background-color: rgb(80, 69, 69);
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+
+.agenda h3{
+    width: 100%;
+    padding-left: 500px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.agenda h1{
+    padding-left: 450px;
+}
+
+.agenda select{
+    padding-left: 400px;
+}
+
+#evento{
+    background-color: rgb(80, 69, 69);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 200px;
+}
+
+#evento p, #evento{
+    margin: 0px;
+}
+
+.evento01{
+    width: 25%;
+}
+
+.evento02{
+    width: 25%;
+}
+
+.evento03{
+    width: 25%;
+}
+
+#evento button{
+    margin: 20px;
+    width: 300px;
+}
+
+#galeria{
+
+    display: flex;
+    justify-content: center
+}
+
+.galeria01 h1{
+    padding-left: 30px
+}
+
+.galeria01 h3{
+    width: 100%;
+    padding-left: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;  
+}
+
+#galeria2{
+    display: flex;
+}
+
+.fotos img{
+    width: 350px;
+    justify-content: flex-start;
+}
+
