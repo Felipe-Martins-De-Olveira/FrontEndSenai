@@ -1,187 +1,232 @@
+/*Font face = anexa uma fonte ao projeto*/
+@font-face {
+    /*font family = define o nome da fonte instalada*/
+    font-family: Roboto;
+    /*src = onde essa fonte está Localizada*/
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: SuperMario256;
+    src: url("../fonts/super_mario_256/SuperMario256.ttf");
+}
+
+/*Geral*/
 *{
-    margin: 0%;
     padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
-    background-color: rgba(0, 0, 0, 0.068);
+h1,h2,h3,h4,h5,h6{
+    font-family: SuperMario256;
 }
 
-.logo{
+section{
     width: 100%;
-    height: auto;
+    padding: 10px 0px;
+    display: flex;
+}
+
+.tituloSection{
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtituloSection{
+    text-align: center;
+    font-size: 10pt;
+    color: gray ;
+
+}
+
+/*Header*/
+
+header{
+    width: 100%;
+
+}
+
+#banner{
+    height: 500px;
+    justify-content: center;
+    background-image: url(../Images/ImagensGeral/cabe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(../Images/logo/logo_vou_de_bike.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(92, 92, 92);
     display: flex;
     justify-content: center;
-    background-image: url(../Imagens/ImagensGeral/40dc178368b4b17b22d471bb917c483e.jpg);
 }
 
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-#horder{
-    width: 100%;
-    height: 40px;
-    background-color: rgb(63, 48, 48);
+ul{
     display: flex;
-    gap: 200px;
+    gap: 100px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav a{
     text-decoration: none;
+    color: antiquewhite;
+}
+
+/*Tipicos*/
+#topicos{
+    gap: 20px;
     justify-content: center;
+}
+
+.topicoGrupo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: aliceblue;
-}
-
-#imgTex{
-    display: flex;
-    gap: 200px;  
-}
-
-#imgTex p, #imgTex{
-    margin: 20px;
-}
-
-.dicasVid{
-    width: 25%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-.noticias{
-    width: 25%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-
-.equipamentos{
-    width: 25%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    gap: 20px;
+    padding: 10px 0px;
    
 }
 
-.dicasVid img{
-    margin-left: 24%;
-    border-radius: 50% !important;
-    width: 200px
-    
-    
+.topicoImagem{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.noticias img{
-    margin-left: 28%;
-    border-radius: 50% !important;
-    width: 200px;
+.topicoGrupo button{
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 6px;
+    cursor: pointer;
 }
 
-.equipamentos img{
-    margin-left: 28%;
-    border-radius: 50% !important;
-    width: 200px
-}
-
-h3{
-    justify-content: center; 
-}
-
-.vermais{
-    width: 100%;
-    border-color: black;
-    padding: 0.75rem;
-    border-width: 1px;
-    margin-left: 10%;
-}
-
-.dicasVid h3{
-    margin-left: 30%;
-}
-
-.noticias h3{
-    margin-left: 23%;
-}
-
-.equipamentos h3{
-    margin-left: 20%;
+#topicoDicas{
+    background-image: url(../Images/OIP.png);
 
 }
 
-#agendamento{
-    background-color: rgb(80, 69, 69);
+#topicoNoticias{
+    background-image: url(../Images/ImagensGeral/noticias.png);
+}
+
+#topicoEquipamento{
+    background-image: url(../Images/ImagensGeral/equipamentos.png);
+}
+
+/* agenda */
+#agenda{
+    flex-direction: column;
+    background-color: rgb(190, 190, 190);
+    gap: 30px;
+}
+
+#seletores{
     display: flex;
-    justify-content: center;
-    
-
-    
+    margin: 0 auto;
+    gap: 20px;
 }
 
-.agenda h3{
-    width: 100%;
-    padding-left: 500px;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.agenda h1{
-    padding-left: 450px;
-}
-
-.agenda select{
-    padding-left: 400px;
-}
-
-#evento{
-    background-color: rgb(80, 69, 69);
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    gap: 200px;
-}
-
-#evento p, #evento{
-    margin: 0px;
-}
-
-.evento01{
-    width: 25%;
-}
-
-.evento02{
-    width: 25%;
-}
-
-.evento03{
-    width: 25%;
-}
-
-#evento button{
-    margin: 20px;
+#seletores select{
     width: 300px;
+    height: 30px;
+    justify-content: center;
 }
 
-#galeria{
-
-    display: flex;
-    justify-content: center
-}
-
-.galeria01 h1{
-    padding-left: 30px
-}
-
-.galeria01 h3{
+#eventos{
     width: 100%;
-    padding-left: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.evento{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    font-size: 8px;
+}
+
+.dataEvento{
+    width: 20%;
+    height: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+}
+
+.evento button{
+    border: none;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#descEvento{
     display: flex;
-    justify-content: center;  
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 8px;
 }
 
-#galeria2{
+/*  email */
+#emailSecao{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#email{
+    width: 80%;
+    height: 30px;
+}
+
+#cadastrar{
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: black;
     display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: aliceblue;
 }
 
-.fotos img{
-    width: 350px;
-    justify-content: flex-start;
+.redes{
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12pt;
+    font-size: 8pt;
 }
 
+.redes img{
+    width: 100%;
+}

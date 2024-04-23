@@ -3,122 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike</title>
+    <title>Coreção Bike</title>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <div class="logo">
-        <img src="Imagens/logo/logo_vou_de_bike.png" alt="logo">
-    </div>
+    <header>
+        <!--Banner do site-->
+        <section id="banner">
+            <div id="logo"></div>
+        </section>
+        
+        <!--Menu de navegação-->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Grupo</a></li>
+                <li><a href="#">Mapas e projetos</a></li>
+                <li><a href="#">Dicas de notícias</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="horder">
-        <a  href="#"><b>Home</b></a>
-        <a href="#"><b>Sobre o Grupo</b></a>
-        <a href="#"><b>Mapa e Projetos</b></a>
-        <a href="#"><b>Discas e Notícias</b></a>
-    </div>
-
-    <div id="imgTex">
-        <div class="dicasVid">
-            <img src="Imagens/RedesSociais/iconesquadrado/vimeo.png" alt="video">
-            <h3> Dicas em video</h3>
-            <p>"Pedalar é uma jornada de liberdade e saúde, mas a segurança sempre vem em primeiro lugar! Prepare-se para dominar as estradas com nossas dicas em vídeo sobre como andar de bicicleta com segurança. De ajustes na bicicleta a técnicas de sinalização, estamos aqui para garantir que cada pedalada seja uma aventura emocionante e segura. Junte-se a nós e vamos pedalar juntos rumo a um futuro mais seguro nas ruas</p>
-            <button type="button" class="vermais">Ver Mais</button>
-        </div>
-     
-    <div class="noticias">
-        <img src="Imagens/RedesSociais/iconesquadrado/freiendfeed.png" alt="Notícias">   
-        <h3>Redes Sociais de Notícias</h3> 
-        <p>Pronto para pedalar por um mundo de notícias sobre bikes que vão além do comum? Bem-vindo ao nosso site, onde cada clique é uma aventura pelas estradas da cultura ciclística!
-        Se você é um ávido ciclista ou apenas curioso sobre duas rodas, estamos aqui para guiá-lo pelas últimas tendências, dicas de manuten</p>
-        <button type="button" class="vermais">Ver Mais</button>
-    </div>
-
-    <div class="equipamentos">
-        <img src="Imagens/ImagensGeral/foto7.jpg" alt="Equipamentos">
-        <h3>Equipamentos para pedalada</h3>
-        <p>Os equipamentos de pedalagem são essenciais para tornar sua experiência sobre duas rodas mais segura, confortável e eficiente</p>
-        <button type="button" class="vermais">Ver Mais</button>
-    </div>
-    </div>
-
-    <div id="agendamento">
-        <div class="agenda">
-            <h1>AGENDA</h1>
-            <h3>Pedalando para um Futuro Sustentável: Explorando a Agenda da Bicicleta</h3>
-        <select>
-            <option value=""></option>
-            <option value="DF">17/04/2024</option>
-            <option value="SC">18/04/2024</option>
-            <option value="MG">19/04/2024</option>
-            <option value="RJ">20/04/2024</option>
-        </select>
-
-        <select>
-            <option value=""></option>
-            <option value="DF">17/04/2024</option>
-            <option value="SC">18/04/2024</option>
-            <option value="MG">19/04/2024</option>
-            <option value="RJ">20/04/2024</option>
-        </select>
-        </div>
-    </div>
-
-        <div id="evento">
-            <div class="evento01">
-                <img src="/Imagens/ImagensGeral/WhatsApp Image 2024-04-17 at 16.33.44.jpeg" alt="">
-                <h3> Eventos 1</h3>
-                <p>No primeiro dia do evento de bikes, a energia era palpável enquanto entusiastas da bicicleta de todas as idades e origens se reuniam para celebrar a cultura ciclística. O dia começou com uma atmosfera vibrante, com ciclistas ansiosos para participar de diversas atividades planejadas. Desde oficinas práticas sobre manutenção de bicicletas até palestras inspiradoras sobre os benefícios do ciclismo para a saúde e o meio ambiente, havia algo para todos os interesses. As ruas ao redor do local do evento se encheram com o tilintar das campainhas e o zumbido das rodas enquanto os participantes exploravam exposições de bicicletas e experimentavam as últimas inovações tecnológicas no mundo das duas rodas. O dia terminou com um emocionante passeio em grupo pela cidade, onde os participantes puderam experimentar em primeira mão a sensação de liberdade e comunidade que o ciclismo proporciona. Foi um começo empolgante para um evento que prometia inspirar, educar e unir os amantes da bicicleta.</p>
-                <button type="button" class="vermais">Ver Mais</button>
+    <main>
+        <!-- Topicos com imagens-->
+        <section id="topicos">
+            <!--Dicas-->
+            <div class="topicoGrupo">
+                <div class="animate__animated animate__bounce animate__infinite	infinite topicoImagem"  id="topicoDicas"></div>
+                <h3>TITULO DICAS</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dolorum, corrupti placeat hic asperiores eius optio esse, maiores animi ut nam eum, omnis quisquam commodi delectus illo sunt fugiat iusto.</p>
+                <button type="button">Ver Mais</button>
             </div>
-
-            <div class="evento02">
-                <img src="Imagens/ImagensGeral/WhatsApp Image 2024-04-17 at 16.33.44.jpeg" alt="">
-                <h3> Evento 2</h3>
-                <p>No primeiro dia do evento de bikes, a energia era palpável enquanto entusiastas da bicicleta de todas as idades e origens se reuniam para celebrar a cultura ciclística. O dia começou com uma atmosfera vibrante, com ciclistas ansiosos para participar de diversas atividades planejadas. Desde oficinas práticas sobre manutenção de bicicletas até palestras inspiradoras sobre os benefícios do ciclismo para a saúde e o meio ambiente, havia algo para todos os interesses. As ruas ao redor do local do evento se encheram com o tilintar das campainhas e o zumbido das rodas enquanto os participantes exploravam exposições de bicicletas e experimentavam as últimas inovações tecnológicas no mundo das duas rodas. O dia terminou com um emocionante passeio em grupo pela cidade, onde os participantes puderam experimentar em primeira mão a sensação de liberdade e comunidade que o ciclismo proporciona. Foi um começo empolgante para um evento que prometia inspirar, educar e unir os amantes da bicicleta.</p>
-                <button type="button" class="vermais">Ver Mais</button>
-            </div>
-
-            <div class="evento03">
-                <img src="Imagens/ImagensGeral/WhatsApp Image 2024-04-17 at 16.33.44.jpeg" alt="">
-                <h3> Evento 3</h3>
-                <p>No primeiro dia do evento de bikes, a energia era palpável enquanto entusiastas da bicicleta de todas as idades e origens se reuniam para celebrar a cultura ciclística. O dia começou com uma atmosfera vibrante, com ciclistas ansiosos para participar de diversas atividades planejadas. Desde oficinas práticas sobre manutenção de bicicletas até palestras inspiradoras sobre os benefícios do ciclismo para a saúde e o meio ambiente, havia algo para todos os interesses. As ruas ao redor do local do evento se encheram com o tilintar das campainhas e o zumbido das rodas enquanto os participantes exploravam exposições de bicicletas e experimentavam as últimas inovações tecnológicas no mundo das duas rodas. O dia terminou com um emocionante passeio em grupo pela cidade, onde os participantes puderam experimentar em primeira mão a sensação de liberdade e comunidade que o ciclismo proporciona. Foi um começo empolgante para um evento que prometia inspirar, educar e unir os amantes da bicicleta.</p>
-                <button type="button" class="vermais">Ver Mais</button>
-            </div>    
-        </div>
-
-        <div id="galeria">
-            <div class="galeria01">
-                <h1>Galeria de fotos</h1>
-                <h3>Fotos de Bike</h3>
-            </div>
-            </div>
-
-            <div id="galeria2">
-                <div class="fotos">
-                    <img src="Imagens/ImagensGeral/07774ecf7f0e39243d9abb3c5e4bcc03.jpg" alt="">
+            <!--Noticias-->
+            <div class="topicoGrupo">
+            <div class="topicoImagem" id="topicoNoticias"></div>
+                <h3>TITULO DE NOTICIAS</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dolorum, corrupti placeat hic asperiores eius optio esse, maiores animi ut nam eum, omnis quisquam commodi delectus illo sunt fugiat iusto.</p>
+                <button type="button">Ver Mais</button>
                 </div>
-    
-                <div class="fotos">
-                    <img src="Imagens/ImagensGeral/09fe2f02b18c258ac4003209df4989e7.jpg" alt="">
-                </div>
-    
-                <div class="fotos">
-                    <img src="Imagens/ImagensGeral/238921.jpg" alt="">
-                </div>
-    
-                <div class="fotos">
-                    <img src="Imagens/ImagensGeral/275-bike.jpg" alt="">
-                </div>
-    
-                <div class="fotos">
-                    <img src="Imagens/ImagensGeral/340x255_1330238.jpg" alt="">
-                </div>
-                </div>
+            <!--Equipamentos-->
+            <div class="topicoGrupo">
+            <div class="topicoImagem" id="topicoEquipamento"></div>
+                <h3>TITULO DE Equipamentos</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dolorum, corrupti placeat hic asperiores eius optio esse, maiores animi ut nam eum, omnis quisquam commodi delectus illo sunt fugiat iusto.</p>
+                <button type="button">Ver Mais</button>
             </div>
             
+        </section>
 
+        <!-- agenda com horário-->
+        <section id="agenda">
+            <h3 class="tituloSection">AGENDA</h3>
+            <p class="subtituloSection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quibusdam doloribus omnis voluptatibus nam, explicabo inventore odio porro optio a ratione vel minus eveniet magni laudantium. In atque voluptatum officia?</p>
 
-    
+            <div id="seletores">
+                <select  id="seletor1">
+                <option value=""></option>
+                </select>
+             
+                <select  id="seletor2">
+                <option value=""></option>
+                </select>
+            </div>
+
+            <div id="eventos">
+                <div class="evento">
+                <div class="dataEvento">
+                    MAR 25
+                </div>
+                 <div id="descEvento">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quasi similique? Magnam laborum libero veritatis? Voluptas odit minima eaque debitis necessitatibus in sed praesentium exercitationem sit, saepe vitae quam quod.</p>
+                 <button type="button">Ver mais</button>
+            </div>
+        </div>
+
+        <div class="evento">
+            <div class="dataEvento">
+                MAR 25
+            </div>
+             <div id="descEvento">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quasi similique? Magnam laborum libero veritatis? Voluptas odit minima eaque debitis necessitatibus in sed praesentium exercitationem sit, saepe vitae quam quod.</p>
+             <button type="button">Ver mais</button>
+        </div>
+    </div>
+
+    <div class="evento">
+        <div class="dataEvento">
+            MAR 25
+        </div>
+         <div id="descEvento">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quasi similique? Magnam laborum libero veritatis? Voluptas odit minima eaque debitis necessitatibus in sed praesentium exercitationem sit, saepe vitae quam quod.</p>
+         <button type="button">Ver mais</button>
+    </div>
+</div>
+
+        
+        </section>
+
+        <!--seção de galeria-->
+        <section id="galeria">
+            <h3 class="tituloSection">GALERIA</h3>
+             <p class="subtituloSection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quibusdam doloribus omnis voluptatibus nam, explicabo inventore odio porro optio a ratione vel minus eveniet magni laudantium. In atque voluptatum officia?</p>
+        </section>
+
+        <!--seção do email-->
+        <section id="emailSecao">
+            <h3 class="tituloSection">NEWSLETTER</h3>
+                <p class="subtituloSection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quibusdam doloribus omnis voluptatibus nam, explicabo inventore odio porro optio a ratione vel minus eveniet magni laudantium. In atque voluptatum officia?</p>
+
+                <input type="email" id="email">
+                <button type="button" id="cadastrar">CADASTRAR</button>
+        </section>
+
+    </main>
+
+    <!-- PNG - tamanho fixo, distorce a qualidade quando aumentado-->
+    <!-- <img width="600px" src="Images/appsPNG.png" alt=""> -->
+    <!-- svg - manda uma fórmula e o computador monta a imagem dinamicamente-->
+    <!-- <img width="600px" src="Images/aplicativosSVG.svg" alt=""> -->
+
+    <footer>
+        <div class="redes">
+            <div class="redes"></div>
+                <img src="Images/RedesSociais/iconescirculo/twitter.png" alt="Logo">
+            <p>@BIKESTwitter</p>
+        </div>
+
+        <div class="redes">
+            <div class="redes"></div>
+                <img src="Images/RedesSociais/iconescirculo/orkut_active.png" alt="LogoOrkut">
+            <p>@BIKESOrkutOficial</p>
+        </div>
+
+        <div class="redes">
+            <div class="redes"></div>
+                <img src="Images/RedesSociais/iconescirculo/facebook.png" alt="LogoFacebook">
+            <p>@BIKESFacebook</p>
+        </div>
+    </footer>
+
 </body>
 </html>
