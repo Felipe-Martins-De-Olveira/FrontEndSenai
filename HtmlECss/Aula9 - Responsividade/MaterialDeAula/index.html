@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="style/Mobilie.css">
+    <!-- print = versão impressa do site -->
+    <!-- srceem amd (orientation : portrait ) = celular em modo paisagem (deitado) -->
+    <link rel="stylesheet" media="screen and (orientation : landscape)" href="style/teste.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="btnMobile" onclick="btnMobilieTrocar() " type="button">
+                <img src="images/menuIcon.svg" alt="menu Icon">
+            </button>
+            <ul id="menuMobile">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <ul id="menuPc">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <picture>
+            <source media="screen and (max-width : 860px)" srcset="images/mulherdancandoMenor.jpg">
+        <img src="images/mulherdancando.jpg" alt="Uma mulher dançando">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum accusamus illum optio repellendus error temporibus dolorum dicta alias cumque, omnis laborum accusantium quibusdam! Ex ad error nobis molestias neque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum accusamus illum optio repellendus error temporibus dolorum dicta alias cumque, omnis laborum accusantium quibusdam! Ex ad error nobis molestias neque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum accusamus illum optio repellendus error temporibus dolorum dicta alias cumque, omnis laborum accusantium quibusdam! Ex ad error nobis molestias neque?</p>
+    </main>
+    
+    <footer>
+        Todos os direitos reservados!
+    </footer>
+
+    <script>
+        // procedimento palavra()
+
+        // FimProcedimento
+
+        function btnMobilieTrocar() {
+            if (menuMobilie.style.display == "flex"){
+                menuMobilie.style.display= "none";
+            }else{
+                menuMobilie.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>
