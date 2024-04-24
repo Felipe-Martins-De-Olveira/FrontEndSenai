@@ -39,26 +39,104 @@ ul{
     justify-content: center;
     gap: 20px;
     margin: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
 }
     /* h1,h2,h3,h4,h5,h6 */
 h3{
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     border-bottom: 2px solid red;
 }
 
-    /* Main */
-main{
-    width: 80%;
-    margin: 10px auto;
+    /* ID */
+
+#imagensPc{
+    background-color: rgba(192, 189, 189, 0.205);
+    width: 50%;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-color: red;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-main img{
-    padding: 40px;
-    width: 40%;
+#imagensPc img{
+    padding: 10px 0px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#imagensPc button{
+    margin: 20px;
+    padding: 10px;
+    width: 20%;
+    color: white;
+    background-color: rgba(255, 0, 64, 0.774);
+    cursor: pointer;
+}
+
+#textoDoMeio{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    margin: 10px auto;
+    padding: 30px;
+}
+
+#arte2{
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#arte3{
+    display: flex;
+    
+}
+
+#arte2 p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+ /* UL */
+ul img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+#arte2 button{
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 20%;
+    justify-content: center;
+    background-color: #F5124B;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+@media screen and (max-width : 860px){
+    body{
+        width: 80%;
+    }
 }
