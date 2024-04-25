@@ -1,142 +1,121 @@
+/* elemento utilizado para guardar variaveis */
+/* geralmente para otimizar e economizar tempo */
+:root{
+    --corPrimaria : #2A2B2A; 
+    --corSecundaria : #F5124B;
+    --black : black;
+    --branco : #ecebeb;
+    --fontePrincipal: 'Trebuchet MS';
+    --tamanhoFonteTitulo : 24pt ;
+}
+
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--corPrimaria);
 }
 
 a{
     text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
+    color: var(--black);
 }
 
-    /* Nav */
-nav{
+header, footer{
     width: 100%;
-    align-items: center;
+    padding: 20px 0px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    background-color: var(--corPrimaria);
+    color: var(--branco);
 }
 
-    /* Nav Color */
-nav h2{
-    color: rgb(185, 181, 181);
-}
-
-    /* header */
 header{
-    padding: 5px 0px;
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-}
-
-    /* ul */
-ul{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px;
-    list-style-type: none;
-    display: flex;
     justify-content: space-around;
-}
-    /* h1,h2,h3,h4,h5,h6 */
-h3{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 2px solid red;
-}
-
-    /* ID */
-
-#imagensPc{
-    background-color: rgba(192, 189, 189, 0.205);
-    width: 50%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#imagensPc img{
-    padding: 10px 0px;
-    width: 70%;
-    border-radius: 10px;
-}
-
-#imagensPc button{
-    margin: 20px;
-    padding: 10px;
-    width: 20%;
-    color: white;
-    background-color: rgba(255, 0, 64, 0.774);
-    cursor: pointer;
-}
-
-#textoDoMeio{
-    width: 50%;
-    display: flex;
-    text-align: center;
-    margin: 10px auto;
-    padding: 30px;
-}
-
-#arte2{
-    width: 50%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#arte3{
-    display: flex;
-    
-}
-
-#arte2 p{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
- /* UL */
-ul img{
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border: 1px solid black;
-}
-
-#arte2 button{
-    display: flex;
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-    width: 20%;
-    justify-content: center;
-    background-color: #F5124B;
-    cursor: pointer;
 }
 
 footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1%;
+    justify-content: center;
 }
 
-@media screen and (max-width : 860px){
-    body{
-        width: 80%;
-    }
+    /* Jogar os links um do lado do outro */
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+section{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* Criação da linha vermelha */
+hr{
+    width: 80%;
+    border: none;
+    border: 1px solid var(--corSecundaria);
+}
+
+#catalogo{
+    gap: 20px;
+}
+
+    /* Deixar as imagens um do lado do outro */
+#catalogoItens{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+    /* Mostra as bordas das imagens */
+.item{
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item img{
+    width: 80%;
+}
+
+#menuMobile{
+    display: none;
+}
+
+#btnMobile{
+    display: none;
+}
+
+#artigo{
+    gap: 20px;
+}
+
+#elizabeth{
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+#elizabeth img{
+    width: 100%;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: var(--corSecundaria);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }

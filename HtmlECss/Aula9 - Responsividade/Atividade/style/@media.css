@@ -1,0 +1,39 @@
+#catalogoItens{
+    flex-direction: column;
+    align-items: center;
+}
+
+.itens{
+    width: 80%;
+}
+
+#menuPC{
+    display: none;
+}
+
+#menuMobile{
+    width: 100%;
+    background-color: var(--corPrimaria);
+    display: none;
+    justify-content: center;
+}
+
+/* Arrumar menu mobile */
+#menuMobile ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    gap: 30px;
+}
+
+/* Arrumar o menu do Mobile */
+#btnMobile{
+    padding: 10px;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    display: flex;
+    color: var(--branco);
+}

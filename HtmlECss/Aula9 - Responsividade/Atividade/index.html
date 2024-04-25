@@ -1,75 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArtMuseum</title>
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" media="screen and (max-width: 860px)" href="style/menucelular.css">
+    <link rel="stylesheet" media="screen and (max-width : 680px)" href="style/@media.css">
 </head>
 <body>
     <header>
-        <nav>
-            <button id="btnMobile" onclick="btnMobilieTrocar()" type="button">
-            <img src="materialAuxiliar/materialAuxiliar/images/menuIcon.svg" alt="">
-        </button>
-            <h2>ArtMuseum</h2>
-            <ul id="menuMobile">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-        <ul id="menuPc">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <h3>ArtMuseum</h3>
+        <nav id="menuPC">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </nav>
+        <button type="button" id="btnMobile" onclick="alternarMenu()">
+            -
+        </button>
     </header>
-    <h3 id="hearder1">Destaque da semana</h3>
+    <nav id="menuMobile">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <div id="imagensPc">
-        <h4>Elizabeth</h4>
-        <img src="materialAuxiliar/materialAuxiliar/images/elizabeth.jpg" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae eaque possimus cupiditate ipsum sed, illo doloremque quos deserunt, reprehenderit praesentium voluptas inventore voluptates pariatur quo quibusdam suscipit! Eaque, voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vitae tempore nihil dolorum cum distinctio, tempora itaque eum quae id totam! Repudiandae expedita temporibus corporis velit nihil soluta deserunt placeat.</p>
-         <button type="button">Ver Mais</button>
-    </div>
+        <section id="artigo">
+            <h3> DESTAQUES DA SEMANA</h3>
+            <hr>
+            <section id="elizabeth">
+                <h3>ELIZABETH</h3>
+                <picture>
+                    <source media="screen and (max-width : 680px)" srcset="materialAuxiliar/materialAuxiliar/images/elizabethMenor.png">
+                    <img src="materialAuxiliar/materialAuxiliar/images/elizabeth.jpg" alt="A imagem de uma mulher">
+                </picture>
 
-    <div id="textoDoMeio">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus perspiciatis blanditiis recusandae tempore aliquid quod placeat sint asperiores expedita dicta aspernatur at, exercitationem odio aliquam autem earum iure veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ratione eius assumenda repellat rerum vel, ipsam iure debitis ducimus qui nemo, quibusdam molestiae reiciendis mollitia tenetur laborum velit provident dolorem?</p>
-    </div>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis aliquam quia delectus distinctio cum eaque rerum mollitia voluptatibus corporis, perferendis nemo, sapiente dolorum deleniti veniam quis, molestias animi obcaecati officia.</p>
+                <button type="button">VER MAIS</button>
+            </section>
+        </section>
 
-    <h3>Artes</h3>
+        <section id="catalogo">
+            <h3>ARTES</h3>
+            <hr>
+            <div id="catalogoItens">
+                <div class="item">
+                    <h4> TITULO DA ARTE</h4>
+                    <img src="materialAuxiliar/materialAuxiliar/images/arte1.jpg" alt="">
+                    <p>DESCRIÇÃO ARTE</p>
+                    <button type="button"> VER SOBRE</button>
+                </div>
 
-    <ul>
-            <div id="arte3">
-            <div id="arte2">
-            <p>Título da arte</p>
-            <img src="materialAuxiliar/materialAuxiliar/images/arte1.jpg" alt="">
-            <p>Descrição da Arte</p>
-            <button>Ver mais</button>
-          </div>
+                <div class="item">
+                    <h4> TITULO DA ARTE</h4>
+                    <img src="materialAuxiliar/materialAuxiliar/images/arte2.jpg" alt="">
+                    <p>DESCRIÇÃO ARTE</p>
+                    <button type="button"> VER SOBRE</button>
+                </div>
 
-          <div id="arte2">
-            <p>Título da arte</p>
-            <img src="materialAuxiliar/materialAuxiliar/images/arte2.jpg" alt="">
-            <p>Descrição da Arte</p>
-            <button>Ver mais</button>
-          </div>
-          <div id="arte2">
-            <p>Título da arte</p>
-            <img src="materialAuxiliar/materialAuxiliar/images/arte3.jpg" alt="">
-            <p>Descrição da Arte</p>
-            <button>Ver mais</button>
-          </div>
-        </div>
-        </div>
-    </ul>
-
+                <div class="item">
+                    <h4> TITULO DA ARTE</h4>
+                    <img src="materialAuxiliar/materialAuxiliar/images/arte3.jpg" alt="">
+                    <p>DESCRIÇÃO ARTE</p>
+                    <button type="button"> VER SOBRE</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>ArteMuseum 2023</p>
+        TODOS DIREITOS REVERVADOS 2024
     </footer>
-    <script src="Javascript/script.js"></script>
+
+    <script>
+        function alternarMenu() {
+            if(menuMobile.style.display == "none"){
+            menuMobile.style.display = "flex";
+            }else{
+                menuMobile.style.display = "none"; 
+            }
+
+            
+        }
+    </script>
 </body>
 </html>
