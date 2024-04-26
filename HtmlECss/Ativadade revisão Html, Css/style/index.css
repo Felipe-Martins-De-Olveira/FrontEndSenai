@@ -1,0 +1,183 @@
+:root{
+    --primeiraCor:#302727;
+    --segundaCor: #ba2d2d;
+    --terceiraCor: #f2511b;
+    --quartaCor: #f2861b;
+    --quintaCor: #c7c730;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    background-color: var(--segundaCor);
+}
+
+header{
+    background-color: var(--segundaCor);
+    justify-content: space-between;
+}
+
+footer{
+    justify-content: center;
+}
+
+header ul{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    list-style: none;
+}
+
+header h3{
+    display: flex;
+
+}
+
+nav, header p{
+    margin: 10px;
+}
+
+header ul img{
+    width: 80px;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    border: solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main section img{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.mensagemImg{
+    position: absolute;
+    top: 50%;
+    background-color: #f2871b59;
+    padding: 40px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnBanner{
+    padding: 10px;
+    border: solid var(--quartaCor);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.mensagemImg h3{
+    font-size: 28pt;
+}
+
+#catalogoDePagamento{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pagamentos{
+    width: 200px;
+    padding: 60px;
+    margin: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#banco2 h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 28pt;
+    gap: 20px;
+}
+
+#banco3{
+    background-color: var(--primeiraCor);
+    color: white;
+    display: flex;
+}
+
+#servicos1{
+    padding: 60px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#servicos1 h1{
+    display: flex;
+    justify-content: center;
+}
+
+#banco3 img{
+    border-radius: 20px;
+}
+
+#banco4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#banco4 h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 28pt;
+    gap: 20px;
+}
+
+#sejaCliente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.clientes{
+    display: flex;
+    justify-content: center;
+}
+
+.clientes img{
+    width: 50%;
+    padding: 60px;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
