@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main .catalogodejogos .jogos{
+    padding: 20px;
+    margin: 30px;
+    background-color: gray;
+    width: 180px;
+    height: 268px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaa;
+}
+
+main .catalogodejogos .jogos h1{
+    font-size: 17px;
+}
+
+main .catalogodejogos .jogos h2{
+    font-size: 28px;
+    color: rgb(117, 23, 23);
+}
+
+main .catalogodejogos .jogos button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+main .catalogodejogos{
+    margin: 30px;
+}
+
+main .catalogodejogos h1 span{
+    color: #00ff08;
+}
+
+main .catalogodejogos .jogos button:hover{
+    box-shadow: 0px 8px 8px #00ff0868;
+}
+
+/* Estilo do cabeçalho */
+header{
+    padding: 40px;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Quando passa o mouse em cima fica branco */
+header a:hover{
+    color: white;
+    /* Quando passa o mouse por cima faz uma aninimação de zoom */
+    transform: scale(1.05);
+}
+
+    /* Tira as bolinhas */
+header nav ul{
+    list-style-type:none ;
+}
+
+    /* Deixar os link um do lado do outro */
+header nav ul li{
+    display: inline-block;
+  margin-right: 30px;
+}
+
+/* class */
+
+.interface img{
+    width: 30%;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-verjogos button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Mudar a cor do sombreado da borda */
+.btn-verjogos button:hover{
+    box-shadow: 0px 8px 8px #00ff0868;
+
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+.catalogodejogos h1 span {
+    padding: 210px;
+}
+
+.mensagemImg{
+    color: rgb(2, 2, 2);
+    position: absolute;
+    top: 30%;
+    background-color: #f2871b13;
+    padding: 40px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ /* ID */
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+
+#jogosimg {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10%;
+}
+
+#jogosimg img{
+    width: 110%;
+}
+
+#btnBanner{
+    padding: 10px;
+    border: solid var(--quartaCor);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+}

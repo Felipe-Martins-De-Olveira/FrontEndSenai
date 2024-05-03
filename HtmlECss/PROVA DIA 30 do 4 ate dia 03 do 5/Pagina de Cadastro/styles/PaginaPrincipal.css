@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    /* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100%;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Estilo do cabeçalho */
+header{
+    padding: 40px;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interface img{
+    width: 30%;
+}
+
+header a{
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Quando passa o mouse em cima fica branco */
+header a:hover{
+    color: white;
+    /* Quando passa o mouse por cima faz uma aninimação de zoom */
+    transform: scale(1.05);
+}
+
+    /* Tira as bolinhas */
+header nav ul{
+    list-style-type:none ;
+}
+
+    /* Deixar os link um do lado do outro */
+header nav ul li{
+    display: inline-block;
+  margin-right: 30px;
+}
+
+.btn-verjogos button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Mudar a cor do sombreado da borda */
+.btn-verjogos button:hover{
+    box-shadow: 0px 8px 8px #00ff0868;
+
+}
+
+/* Meio do site */
+section .meio-do-site{
+    padding: 40px 4%;
+}
+
+    /* Deixa as imagens um do lado do outro */
+section .meio-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+    /* Tamanho da img */
+section .img-logo2 img{
+    width: 100%;
+}
+
+.meio-do-site h1{
+    color: white;
+    font-size: 42px;
+    /* coloca distancia da escritas  */
+    line-height: 60px;
+}
+
+.meio-do-site .txt-topo-site h1 span{
+    color: #00ff08;
+}
+
+.meio-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+
+.meio-do-site .img-logo2 img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}

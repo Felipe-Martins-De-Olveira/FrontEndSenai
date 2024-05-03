@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Link css-->
+    <link rel="stylesheet" href="styles/Catalogo.css">
+    <title>Catalogo de jogos</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Logo.Png" alt="">
+                </a>
+            </div> <!--Logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                    <li><a href="#">Promoção</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+        </nav>
+
+        <div class="btn-verjogos">
+            <a href="PaginaPrincipal.html"></a>
+            <button>Voltar</button>
+        </div> <!--Btn-Contato-->
+      </div> <!--Interface-->
+    </header>
+
+    <main>
+        <div class="slider">
+
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+            
+                <div class="slide first">
+                    <img src="img/img games/RE4 Remake.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/img games/godofwar.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/img games/shadowofmordor.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="autobtn1"></div>
+                    <div class="autobtn1"></div>
+                    <div class="autobtn1"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+            <div class="mensagemImg"><h3>MELHORES JOGOS DO ANO</h3>
+                <p>MELHORES JOGOS DE 2023 CONFIRA</p>
+                <button type="button" id="btnBanner"><P>CONFIRA AGORA</P>
+                </button>
+            </div>  
+
+         </div>
+         <section class="catalogodejogos">
+            <h1><span>PROMOÇÃO DA SEMANA</span></h1>
+            <div id="jogosimg">
+                <div class="jogos">   
+                    <h1>SHADOW</h1>
+                    <img src="img/img games/shadowofmordor.jpg" alt="">
+                    <h2>GAME</h2>
+                    <span>R$ 5,58</span>
+                    <button>Comprar</button>
+                </div>
+           
+
+               <div class="jogos">   
+                    <h1>RESIDENT EVIL 4</h1>
+                    <img src="img/img games/RE4 Remake.jpeg" alt="">
+                    <h2>GAME</h2>
+                    <span>R$ 5,58</span>
+                    <button>Comprar</button>
+                </div>
+            
+
+            <div class="jogos">   
+                <h1>GOD OF WAR </h1>
+                <img src="img/img games/godofwar.jpg" alt="">
+                <h2>GAME</h2>
+                <span>R$ 5,58</span>
+                <button>Comprar</button>
+            
+             </div>
+         </div>
+        </section>
+    
+        </main>
+   
+
+</body>
+    <script src="js/navigation.js"></script>
+</html>

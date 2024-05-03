@@ -1,0 +1,193 @@
+/* Importa a fonte 'Inter' do Google Fonts com pesos variados */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Define estilos básicos para todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Usa a fonte 'Inter' para todos os elementos */
+}
+
+/* Estilos para o corpo da página */
+body {
+    width: 100%; /* Define a largura do corpo como 100% da largura da janela */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da janela */
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: rgb(166, 90, 236); /* Define a cor de fundo do corpo */
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    width: 80%; /* Define a largura do contêiner como 80% do espaço disponível */
+    height: 80vh; /* Define a altura do contêiner como 80% da altura da janela */
+    display: flex; /* Usa flexbox para alinhar itens */
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212); /* Adiciona sombra ao contêiner */
+}
+
+/* Estilos para a seção de imagem do formulário */
+.imagem-formulario {
+    width: 50%; /* Define a largura da seção de imagem como 50% do contêiner */
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: rgb(226, 162, 79); /* Define a cor de fundo da seção de imagem */
+    padding: 1rem; /* Adiciona preenchimento à seção de imagem */
+}
+
+/* Estilos para a imagem dentro da seção de imagem do formulário */
+.imagem-formulario img {
+    width: 31rem; /* Define a largura da imagem */
+}
+
+/* Estilos para o formulário */
+.form {
+    width: 50%; /* Define a largura do formulário como 50% do contêiner */
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    background-color: #fdfdfd; /* Define a cor de fundo do formulário */
+    padding: 3rem; /* Adiciona preenchimento ao formulário */
+}
+
+/* Estilos para o cabeçalho do formulário */
+.form header {
+    margin-bottom: 3rem; /* Define a margem inferior do cabeçalho */
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+}
+
+/* Estilos para o botão de login */
+.login-button {
+    display: flex; /* Usa flexbox para alinhar itens */
+    align-items: baseline; /* Centraliza verticalmente */
+    flex-direction: row-reverse;
+}
+
+/* Estilos para o botão de login dentro do formulário */
+.login-button button {
+    border: none; /* Remove a borda do botão */
+    background-color: blueviolet; /* Define a cor de fundo do botão */
+    padding: 0.4rem 1rem; /* Adiciona preenchimento ao botão */
+    border-radius: 5px; /* Define a borda arredondada do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+}
+
+/* Estilos para o link dentro do botão de login */
+.login-button button a {
+    text-decoration: none; /* Remove a decoração do link */
+    font-weight: 500; /* Define o peso da fonte */
+    color: white; /* Define a cor do texto */
+}
+
+/* Estilos para o título do formulário */
+.form-header h1::after {
+    content: ''; /* Adiciona conteúdo gerado */
+    display: block; /* Transforma o elemento em bloco */
+    width: 5rem; /* Define a largura do pseudo-elemento */
+    height: 0.3rem; /* Define a altura do pseudo-elemento */
+    background-color: blueviolet; /* Define a cor de fundo do pseudo-elemento */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: absolute; /* Define a posição absoluta */
+    border-radius: 10px; /* Define o raio da borda do pseudo-elemento */
+}
+
+/* Estilos para o grupo de entrada */
+.entrada-groupo {
+    display: flex; /* Usa flexbox para alinhar itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    padding: 1rem 0; /* Adiciona preenchimento ao grupo de entrada */
+}
+
+/* Estilos para a caixa de entrada */
+.caixa-de-entrada {
+    display: flex; /* Usa flexbox para alinhar itens */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    margin-bottom: 1.1rem; /* Define a margem inferior da caixa de entrada */
+}
+
+/* Estilos para a entrada dentro da caixa de entrada */
+.caixa-de-entrada input {
+    margin: 0.6rem 0; /* Define a margem da entrada */
+    padding: 0.8rem 1.2rem; /* Adiciona preenchimento à entrada */
+    border-radius: 10px; /* Define o raio da borda da entrada */
+    box-shadow: 1px 1px 6px #0000001c; /* Adiciona sombra à entrada */
+}
+
+/* Estilos para a entrada ao passar o mouse */
+.caixa-de-entrada input:hover {
+    background-color: #eeeeee75; /* Define a cor de fundo ao passar o mouse */
+} 
+
+/* Estilos para a entrada focada */
+.caixa-de-entrada input:focus-visible {
+    outline: 1px solid #6c63ff; /* Define a cor da borda ao focar */
+}
+
+/* Estilos para o rótulo da entrada e título de gênero */
+.caixa-de-entrada label,
+.gender-title h6 {
+    font-size: 0.75rem; /* Define o tamanho da fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    color: #000000c0; /* Define a cor do texto */
+}
+
+/* Estilos para o espaço de gênero */
+.gender-group {
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    margin-top: 0.62rem; /* Define a margem superior */
+    padding: 0 0.5rem; /* Adiciona preenchimento */
+    gap: 20px;
+}
+
+/* Estilos para os itens de entrada de gênero */
+.gender-inputs {
+    display: flex; /* Usa flexbox para alinhar itens */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+/* Estilos para a entrada de gênero */
+.gender-inputs input {
+    margin-right: 0.35rem; /* Define a margem direita */
+}
+
+/* Estilos para o rótulo da entrada de gênero */
+.gender-inputs label {
+    font-size: 0.81rem; /* Define o tamanho da fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    color: #000000cb; /* Define a cor do texto */
+}
+
+/* Estilos para o botão de continuar */
+.continue-button {
+    width: 100%; /* Define a largura como 100% */
+    margin-top: 2.5rem; /* Define a margem superior */
+    border: none; /* Remove a borda */
+    background-color: #6c63ff; /* Define a cor de fundo */
+    padding: 0.62rem; /* Adiciona preenchimento */
+    border-radius: 5px; /* Define o raio da borda */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    display: flex;
+    justify-content: space-around;
+}
+
+.continue-button button:hover{
+    background-color:#6c63ff;
+}
+
+.continue-button button {
+    border: none;
+    background-color: #6c63ff;
+    color: #6c63ff;
+}
+
+.continue-button button a {
+    text-decoration: none;
+}
