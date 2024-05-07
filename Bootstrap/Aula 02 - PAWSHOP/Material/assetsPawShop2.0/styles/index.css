@@ -1,0 +1,54 @@
+:root {
+    --azul : #6EB3D0;
+    --verde : #B6D7A8 ;
+    --rosa : #F7B6D2;
+    --laranja : #F4A623;
+    --preto : #000000;
+    --branco : #FFFFFF; 
+}
+
+/* header */
+header nav{
+    background-color: var(--azul);
+}
+
+#introducao{
+    color: var(--azul);
+}
+
+#catalogo h3, #catalogo h4{
+    color: var(--laranja);
+}
+
+#catalogoitems button{
+    background-color: var(--rosa);
+    color: black;
+}
+
+#catalogoitems h5 {
+    color: var(--verde);
+}
+
+#adote h3{
+    color: var(--rosa);
+}
+
+#adote form h3{
+    color: var(--azul);
+}
+
+.mb-3 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+form button{
+    display: flex;
+    border: none;
+    width: 10%;
+    border-radius: 10px;
+    background-color: var(--azul);
+    color: black;
+}
