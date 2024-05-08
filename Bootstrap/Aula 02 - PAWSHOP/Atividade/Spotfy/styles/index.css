@@ -1,0 +1,20 @@
+:root{
+
+}
+
+body {
+    height: 100vh;
+    background: rgb(78,8,138);
+    background: linear-gradient(23deg, rgba(78,8,138,1) 38%, rgba(2,0,36,1) 88%);
+}
+
+nav #header1{
+    
+background: rgb(78,8,138);
+background: linear-gradient(23deg, rgba(78,8,138,1) 38%, rgba(2,0,36,1) 88%);
+}
+
+#offcanvasNavbar{
+    background: rgb(78,8,138);
+background: linear-gradient(23deg, rgba(78,8,138,1) 38%, rgba(2,0,36,1) 88%);
+}

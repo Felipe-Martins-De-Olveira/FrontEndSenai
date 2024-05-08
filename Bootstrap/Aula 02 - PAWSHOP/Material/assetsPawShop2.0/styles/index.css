@@ -16,6 +16,10 @@ header nav{
     color: var(--azul);
 }
 
+footer{
+    background-color: var(--azul);
+}
+
 #catalogo h3, #catalogo h4{
     color: var(--laranja);
 }
@@ -23,6 +27,7 @@ header nav{
 #catalogoitems button{
     background-color: var(--rosa);
     color: black;
+    border: none;
 }
 
 #catalogoitems h5 {
@@ -45,10 +50,6 @@ header nav{
 }
 
 form button{
-    display: flex;
-    border: none;
-    width: 10%;
-    border-radius: 10px;
-    background-color: var(--azul);
     color: black;
+    background-color: var(--azul);
 }
