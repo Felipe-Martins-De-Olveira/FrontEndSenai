@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="Logo/Spotify_logo_without_text.svg" type="image/x-icon">
+    <title>Spotfy</title>
+</head>
+<body>
+    
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" href="#">
+                <img src="imgs/Logo/Spotify_logo_without_text.svg" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse w-100 d-flex justify-content-center navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-center me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">FEATURED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">GENRES AND MOODS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NEW RELEASE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DISCOVER</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container-fluid d-flex flex-column align-items-center">
+        <h1>Winding Down..</h1>
+        <div class="grupoMusicas container-fluid gap-3 d-flex">
+            <!-- musica 1 -->
+            <div data-bs-toggle="offcanvas" data-bs-target="#playerMusica" class="card bg-transparent text-white" style="width: 18rem;">
+                <img src="imgs/Álbuns - Músicas/ab67616d0000b2734714f11987b7ddddf897ce98.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-text">Music.</p>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <!-- OffCanvas -->
+    <!-- MenuLateral -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Player Musica -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="playerMusica" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>
