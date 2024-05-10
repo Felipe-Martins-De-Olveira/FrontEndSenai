@@ -49,6 +49,27 @@
                   <p class="card-text">Music.</p>
                 </div>
               </div>
+
+              <div data-bs-toggle="offcanvas" data-bs-target="#playerMusica" class="card bg-transparent text-white" style="width: 18rem;">
+                <img src="imgs/Álbuns - Músicas/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-text">Music.</p>
+                </div>
+              </div>
+
+              <div data-bs-toggle="offcanvas" data-bs-target="#playerMusica" class="card bg-transparent text-white" style="width: 18rem;">
+                <img src="imgs/Álbuns - Músicas/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-text">Music.</p>
+                </div>
+              </div>
+
+              <div data-bs-toggle="offcanvas" data-bs-target="#playerMusica" class="card bg-transparent text-white" style="width: 18rem;">
+                <img src="imgs/Álbuns - Músicas/ab67616d00001e02eaf3178d5ebb408fab56f6b8.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-text">Music.</p>
+                </div>
+              </div>
         </div>
     </main>
 
@@ -56,37 +77,58 @@
 
     <!-- OffCanvas -->
     <!-- MenuLateral -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    <div class="offcanvas offcanvas-start text" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <div id="parteSuperior">
+            <!-- logo -->
+            <img width="40px" class="mb-3" src="imgs/Logo/Spotify_logo_without_text.svg" alt="">
+            <div class="input-group mb-3">
+              <!-- input -->
+              <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text bg-transparent" id="basic-addon2">
+                <img src="imgs/Icones/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+              </span>
+            </div>
+            <!-- link -->
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Your Musics</a>
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <div id="parteInferior">
+            <a href="#" class="nav-link">Install app</a>
+            <hr>
+            <div class="d-flex gap-3 align-items-center">
+              <img width="40px" src="imgs/Fotos de perfil/albert-dera-ILip77SbmOE-unsplash.jpg" alt="">
+              Albert
+            </div>
           </div>
+
         </div>
       </div>
       <!-- Player Musica -->
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="playerMusica" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
+
   <div class="offcanvas-body small">
-    ...
+    <div id="botoesMusicas" class="text-white container-fluid d-flex justify-content-center">
+      <img src="imgs/Icones/skip-start-fill.svg" alt="">
+      <img id="play" onclick="iniciar()" src="imgs/Icones/play-circle.svg" alt="">
+      <img src="imgs/Icones/skip-end-fill.svg" alt="">
+    </div>
+    <div id="progressoMusica" class="gap-3 text-white container-fluid d-flex justify-content-center align-items-center">
+      0.00
+      <div id="progressoDaMusicaBarraTotal" class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div id="progressoDaMusica" class="progress-bar progressoDaMusicaComeco"></div>
+      </div>
+      0.00
+    </div>
   </div>
 </div>
+
+    <script>
+      function iniciar(){
+        let play = document.getElementById("progressoDaMusica");
+        play.classList.replace("progressoDaMusicaComeco","progressoDaMusicaCompleto");
+      }
+    </script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>

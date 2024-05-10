@@ -4,6 +4,8 @@
 }
 
 :root{
+    --cinzaClaro : rgb(136, 123, 123);
+    --cinza : rgb(68, 67, 67);
     --primario : #1db954;
     --secundaria : #1ed760;
     --preto : #191414;
@@ -43,4 +45,50 @@ body{
 .card img, .card{
     border-radius: 0%;
 
+}
+
+#playerMusica{
+    height: auto;
+    background-color: var(--cinza);
+}
+
+#botoesMusicas img{
+    height: 40px;
+    
+}
+
+#progressoDaMusica {
+    background-color: var(--primario);
+}
+
+#progressoDaMusicaBarraTotal {
+    width: 60%;
+    background-color: var(--cinzaClaro);
+    height: 3px;
+}
+
+.progressoDaMusicaCompleto{
+    width: 100%;
+    transition: 30s;
+}
+
+.progressoDaMusicaComeco{
+    width: 0%;
+    transition: 30s;
+}
+
+#menuLateral{
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+}
+
+.input-group input, .input-group span{
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 0%;
+}
+
+input::placeholder{
+    color: white!important;
 }
