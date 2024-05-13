@@ -1,0 +1,49 @@
+body{
+    height: 100vh;
+    background: rgb(47,31,51);
+background: linear-gradient(90deg, rgba(47,31,51,1) 0%, rgba(237,237,237,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+#maisPedidos #catalogoitems h3 {
+    display: flex;
+    justify-content: space-evenly ;
+    margin: 10px;
+}
+
+#catalogoitems{
+   background-color: #f15800;
+   border-color: #f15800;
+}
+
+#catalogoitems .card{
+    border-color: white;
+    background-color: transparent;
+}
+
+#marketing {
+    background-color: white;
+}
+
+#marketing #marketing2 img{
+    height: 100vh;
+    width: 50%;
+}
+
+#marketing #marketing2 {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    margin: 10px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar{
+    position: fixed;
+}
