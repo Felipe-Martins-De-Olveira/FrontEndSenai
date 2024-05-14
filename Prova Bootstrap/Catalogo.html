@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/Catalago.css">
+    <title>CoffeeShop</title>
+</head>
+<body>
+    <header>
+           <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" href="#">
+                <img src="img/Logo.svg" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse w-100 d-flex justify-content-center navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-center me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Sobre nós.html">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Catalogo.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Franqueados.html">Franqueados</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <section id="img2">
+        <div class="card text-bg-dark">
+          <img src="Img/capuccino12.webp" class="card-img w-100" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Cremoso Celestial</h5>
+            <p class="card-text">O "Cremoso Celestial" é um capuccino indulgente que leva os sentidos a uma viagem celestial de sabores e aromas. <br> Sua base é uma mistura rica de café espresso encorpado e leite vaporizado cremoso, que se fundem perfeitamente para criar uma textura suave e sedosa.</p>
+          </div>
+        </div>
+      </section>
+        <section id="catalogo" class="d-flex flex-column align-items-center">
+          <h3>CATÁLOGO DE CAPUCCINO</h3>
+          <div id="catalogoitems" class="container-fluid row d-fex justify-content-center gap-4 p-3">
+              <!-- Catálogo -->
+              <div class="card p-3" style="width: 24rem;">
+                  <img src="Img/Cappuccino.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h4 class="card-title">Capuccino Veludo de Vanilla</h4>
+                    <p class="card-text">O capuccino "Veludo de Baunilha" é uma experiência luxuosa que combina a riqueza do café espresso com a suavidade reconfortante da baunilha. Esta bebida é uma verdadeira indulgência para os amantes de sabores cremosos e aromas reconfortantes.</p>
+                    <h5>R$10,99</h5>
+                    <button data-bs-target="#veludo" data-bs-toggle="modal" type="button" class="btn btn-primary">VER MAIS</button>
+                  </div>
+                </div>
+
+                <div class="card p-3" style="width: 24rem;">
+                  <img src="Img/Café.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h4 class="card-title">Sonho de Caramelo</h4>
+                    <p class="card-text">O capuccino "Sonho de Caramelo" é uma tentação decadente que combina a riqueza do café espresso com a doçura indulgente do caramelo. Esta deliciosa bebida é uma escolha perfeita para os amantes de sabores doces e cremosos.
+                  </p>
+                    <h5>R$10,99</h5>
+                    <button data-bs-target="#caramelo" data-bs-toggle="modal" type="button" class="btn btn-primary">VER MAIS</button>
+                  </div>
+                </div>
+
+                <div class="card p-3" style="width: 24rem;">
+                  <img src="Img/Sorvete.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h4 class="card-title">Crepúsculo de Framboesa</h4>
+                    <p class="card-text"> A base do "Crepúsculo de Framboesa" é feita com um creme de sorvete luxuosamente cremoso, cuidadosamente elaborado para proporcionar uma textura suave e indulgente. Em seguida, ele é infundido com uma mistura exuberante de framboesas frescas e suculentas, que adicionam uma explosão de sabor frutado e refrescante a cada colherada.                </p>
+                    <h5>R$10,99</h5>
+                    <button data-bs-target="#framboesa" data-bs-toggle="modal" type="button" class="btn btn-primary">VER MAIS</button>
+                  </div>
+                </div>
+          </div>
+          
+      </section>
+    </section>
+  </main>
+
+    <footer></footer>
+
+
+     <!-- OffCanvas -->
+     <section id="offcanvas2">
+     <div class="offcanvas offcanvas-start text" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <div id="parteSuperior">
+          <!-- logo -->
+          <img width="40px" class="mb-3" src="Img/Logo.svg" alt="">
+          <div class="input-group mb-3">
+            <!-- input -->
+            <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text bg-transparent" id="basic-addon2">
+              <img src="imgs/Icones/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+            </span>
+          </div>
+          <!-- link -->
+          <a href="#" class="nav-link">Seu Perfil</a>
+          <a href="#" class="nav-link">Carrinho</a>
+        </div>
+        <div id="parteInferior">
+          <a href="#" class="nav-link"></a>
+          <hr>
+          <div class="d-flex gap-3 align-items-center">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    
+    <!-- modais e offcanvas -->
+    <!-- modal da coleira -->
+    <!-- Modal -->
+<div class="modal fade" id="veludo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Capuccino Veludo de Vanilla</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Img/Cappuccino.jpeg" class="w-100" alt="">
+        <h5>R$10,99</h5>
+        <h5>Frete Grátis</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adicionar Carrinho!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="caramelo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sonho de Caramelo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Img/Café.jpeg" class="w-100" alt="">
+        <h5>R$10,99</h5>
+        <h5>Frete Grátis</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adicionar Carrinho!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="framboesa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Crepúsculo de Framboesa</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Img/Sorvete.jpeg" class="w-100" alt="">
+        <h5>R$10,99</h5>
+        <h5>Frete Grátis</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adicionar Carrinho!</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+    <script src="Scripts/index.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

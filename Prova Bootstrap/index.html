@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="styles/Mobile.css">
     <title>CoffeeShop</title>
 </head>
 <body>
@@ -24,13 +25,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nós</a>
+                    <a class="nav-link" href="Sobre nós.html">Sobre nós</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Catálogo</a>
+                    <a class="nav-link" href="Catalogo.html">Catálogo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Franqueados</a>
+                    <a class="nav-link" href="Franqueados.html">Franqueados</a>
                   </li>
               </div>
             </div>
@@ -99,40 +100,42 @@
                         <p>Passe Grandes momentos em um espaço diferenciado, que combina empório com cafeteria, onde as pessoas podem se sentar e saborear uma fatia de panettone quentinha polvilha com a açúcar e canela, um croissant ou um palmier entre outras delícias, acompanhada de uma bela xícara de café ou cappuccino.</p>
                         <p>Faça seus pedidos hoje mesmo e desfrute de grandes momentos com sua família  ou amigos.</p>
                       </form>
-    
-                      <img class="col-5 m-0 p-0" src="Img/Clientes.png" class="rounded float-end" alt="...">
+                      <img class="col-5 d-flex d-dm-none d-lg-none  " src="Img/Cliente mobilie svg.svg" class="rounded float-end" alt="...">
+                      <img class="col-5 d-none d-dm-none d-lg-flex " src="Img/Clientes.png" class="rounded float-end" alt="...">
                 </div>
              </section>
     </main>
 
     <footer><p>Todos os direitos Reservados</p></footer>
 
-     <!-- OffCanvas -->
-    <div class="offcanvas offcanvas-start text" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-body d-flex flex-column justify-content-between">
-          <div id="parteSuperior">
-            <!-- logo -->
-            <img width="40px" class="mb-3" src="Img/1600w-hDHQ6HihuR0.webp" alt="">
-            <div class="input-group mb-3">
-              <!-- input -->
-              <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <span class="input-group-text bg-transparent" id="basic-addon2">
-                <img src="imgs/Icones/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-              </span>
-            </div>
-            <!-- link -->
-            <a href="#" class="nav-link"></a>
-            <a href="#" class="nav-link"></a>
-          </div>
-          <div id="parteInferior">
-            <a href="#" class="nav-link"></a>
-            <hr>
-            <div class="d-flex gap-3 align-items-center">
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <!-- OffCanvas -->
+      <section id="offcanvas2">
+        <div class="offcanvas offcanvas-start text" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
+         <div class="offcanvas-body d-flex flex-column justify-content-between">
+           <div id="parteSuperior">
+             <!-- logo -->
+             <img width="40px" class="mb-3" src="Img/Logo.svg" alt="">
+             <div class="input-group mb-3">
+               <!-- input -->
+               <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+               <span class="input-group-text bg-transparent" id="basic-addon2">
+                 <img src="imgs/Icones/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+               </span>
+             </div>
+             <!-- link -->
+             <a href="#" class="nav-link">Seu Perfil</a>
+             <a href="#" class="nav-link">Carrinho</a>
+           </div>
+           <div id="parteInferior">
+             <a href="#" class="nav-link"></a>
+             <hr>
+             <div class="d-flex gap-3 align-items-center">
+             </div>
+           </div>
+   
+         </div>
+       </div>
+     </section>
 
     <script src="Scripts/index.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>

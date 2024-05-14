@@ -25,7 +25,7 @@ background: linear-gradient(90deg, rgba(47,31,51,1) 0%, rgba(237,237,237,1) 100%
 }
 
 #marketing #marketing2 img{
-    height: 100vh;
+    padding: 20px;
     width: 50%;
 }
 
@@ -44,6 +44,3 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#navbar{
-    position: fixed;
-}

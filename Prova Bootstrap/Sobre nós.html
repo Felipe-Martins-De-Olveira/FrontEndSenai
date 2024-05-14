@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/Sobrenós.css">
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="styles/Mobile Sobre nós.css">
     <title>CoffeeShop</title>
 </head>
 <body>
@@ -21,16 +22,16 @@
               <div class="collapse w-100 d-flex justify-content-center navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav w-100 d-flex justify-content-center me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Sobre nós</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Catálogo</a>
+                    <a class="nav-link" href="Catalogo.html">Catálogo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Franqueados</a>
+                    <a class="nav-link" href="Franqueados.html">Franqueados</a>
                   </li>
               </div>
             </div>
@@ -42,44 +43,56 @@
         <h2>Nossa Historia</h2>
         <p>A Casa Bauducco é conhecida por proporcionar uma experiência agradável aos amantes de café e pães, com um toque de tradição e <br>qualidade que acompanha a marca Bauducco ao longo de sua história.</p>
         <div id="sobreNos2" class="container-fluid row align-items-center ">
-          <img class="col-5 m-0 p-0" src="Img/Sobre nos.jpg" class="rounded float-end" alt="...">
+          <img class="col-5 d-flex d-dm-none d-lg-none  " src="Img/Cliente Mobile 2.svg" class="rounded float-end" alt="...">
+          <img class="col-5 d-none d-dm-none d-lg-flex " src="Img/MaisPedido1.webp" class="rounded float-end" alt="...">
           <form class="col-6 m-0 p-0">
              <P>A história da Casa Bauducco tem suas raízes na famosa marca de produtos de panificação Bauducco. Fundada por Carlo Bauducco em 1952, a empresa começou como uma pequena padaria em São Paulo, Brasil. Ao longo dos anos, a Bauducco se destacou na produção de biscoitos, panettones e outros produtos de confeitaria, tornando-se uma marca muito conhecida no Brasil e em outros países.</P>
              <h3>Casa Bauducco Joinville - SC</h3>
              <p>O nosso espaço os clientes poderão saborear panettones e chocottones em fatias, além de brioches, toasts, focaccias e cafés especiais em combinações elaboradas. Para as refeições, o menu conta ainda com lasanhas, raviolis e sopas.</p>
-            </form>
-
-            
+            </form>   
       </div>
       </section>
+
+      <section id="localidade" class="d-flex flex-column align-items-center">
+        <div id="localizacao" class="container-fluid row align-items-center ">
+          <h1>Localização</h1>
+            <form class="col-6 m-0 p-0">
+              </form>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.425225665806!2d-47.92439342486896!3d-15.834232884811701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bdb7a9bad1d%3A0xaedd84a1592300a0!2sCappuccino%20Bistr%C3%B4%20e%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1715710257685!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </section>
     </main>
 
     <footer></footer>
 
+  <!-- OffCanvas -->
+  <section id="offcanvas2">
+    <div class="offcanvas offcanvas-start text" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
+     <div class="offcanvas-body d-flex flex-column justify-content-between">
+       <div id="parteSuperior">
+         <!-- logo -->
+         <img width="40px" class="mb-3" src="Img/Logo.svg" alt="">
+         <div class="input-group mb-3">
+           <!-- input -->
+           <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+           <span class="input-group-text bg-transparent" id="basic-addon2">
+             <img src="imgs/Icones/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+           </span>
+         </div>
+         <!-- link -->
+         <a href="#" class="nav-link">Seu Perfil</a>
+         <a href="#" class="nav-link">Carrinho</a>
+       </div>
+       <div id="parteInferior">
+         <a href="#" class="nav-link"></a>
+         <hr>
+         <div class="d-flex gap-3 align-items-center">
+         </div>
+       </div>
 
-     <!-- OffCanvas -->
-     <div class="offcanvas offcanvas-start text" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-body d-flex flex-column justify-content-between">
-        <div id="parteSuperior">
-          <!-- logo -->
-          <img width="40px" class="mb-3" src="Img/1600w-hDHQ6HihuR0.webp" alt="">
-          <div class="input-group mb-3">
-            <!-- input -->
-            <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <span class="input-group-text bg-transparent" id="basic-addon2">
-              <img src="imgs/Icones/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-            </span>
-          </div>
-          <!-- link -->
-          <a href="#" class="nav-link"></a>
-          <a href="#" class="nav-link"></a>
-        </div>
-        <div id="parteInferior">
-          <a href="#" class="nav-link"></a>
-          <hr>
-          <div class="d-flex gap-3 align-items-center">
-          </div>
-        </div>
+     </div>
+   </div>
+ </section>
 
       </div>
     </div>
