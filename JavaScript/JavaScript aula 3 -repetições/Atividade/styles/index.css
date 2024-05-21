@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.filme{
+    width: 400px;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+    padding: 20px;
+    background-color: azure;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verMais{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.verMais:hover{
+    background-color: rgba(137, 43, 226, 0.699);
+}
+
+.grupoFilmes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
