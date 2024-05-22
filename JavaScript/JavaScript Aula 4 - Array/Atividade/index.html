@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Lojinha de Pc</a>
+            <div id="usuarioStatus">
+                <button data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary" id="btnLogin" type="button">Login</button>
+            </div>
+        </div>
+      </nav>
+      <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#carrinho" id="btnCarrinho">Carrinho</button>
+    </header>
+    <main class="container-fliud d-flex flex-wrap">
+
+    </main>
+
+    <!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container-fluid p-3 d-flex justify-content-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Login -->
+            <div class="mb-3">
+                <label for="usuario" class="form-label">USUARIO</label>
+                <input type="text" id="usuario" class="form-control">
+            </div>
+
+            <!-- Senha -->
+            <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
+            <div id="passwordHelpBlock" class="form-text">
+                Digite a sua senha!
+            </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+            <button id="logarUsuario" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Logar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OffCanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="carrinho" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrinho</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="respostaCarrinho">
+        O carrinho está vazio 😊
+      </div>
+    </div>
+  </div>
+
+    <script src="script/script.js"></script>
+    <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+</html>
