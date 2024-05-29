@@ -75,6 +75,7 @@ input:hover,select:hover,button:hover{
     height: 100%;
     margin-top: 5px;
     background-color: green;
+    border-radius: 50px;
 }
 
 .vermelho{
