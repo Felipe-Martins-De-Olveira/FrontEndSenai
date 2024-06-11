@@ -1,0 +1,282 @@
+/* Adicionando a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --cor-primaria: #4CAF50;
+  --cor-secundaria: #367c39;
+  --cor-texto: #FFFFFF;
+  --fonte-primaria: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--fonte-primaria);
+  background-color: black;
+  color: var(--cor-texto);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header a{
+  color: rgb(104, 104, 104);
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Quando passa o mouse em cima fica branco */
+header a:hover{
+  color: white;
+  /* Quando passa o mouse por cima faz uma aninimação de zoom */
+  transform: scale(1.05);
+}
+
+  /* Tira as bolinhas */
+header nav ul{
+  list-style-type:none ;
+}
+
+  /* Deixar os link um do lado do outro */
+header nav ul li{
+  display: inline-block;
+margin-right: 30px;
+}
+
+/* Estilo do cabeçalho */
+header{
+  padding: 40px;
+}
+
+header .interface{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span{
+  color: #00ff08;
+}
+
+/* ID */
+#topicos {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#topicosCabecalho{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: white;
+}
+
+.topicosGrupos{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0px;
+}
+
+#topicos p{
+  color: rgb(255, 255, 255);
+}
+
+.topicosGrupos h1{
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255) ;
+  margin: 10px;
+}
+
+.topicosImg{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#steam {
+  background-image: url(../Img/fundo-de-cinema-ainda-vida_23-2150743152\ \(2\).avif);
+}
+
+#playStation3{
+  background-image: url(../Img/images\ \(4\).jpg)
+}
+
+#playStation4{
+  background-image: url(../Img/images\ \(5\).jpg);
+}
+
+#jogosSteam3 h3{
+  color: white;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: var(--cor-texto);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 25%;
+  height: 60%;
+}
+
+.carousel-caption a {
+  margin-top: 7%;
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+.carousel-caption a:hover,
+.carousel-caption a:focus {
+  color: var(--cor-secundaria);
+}
+
+.carousel-caption h5 {
+  font-size: x-large;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.card img {
+  width: 300px;
+}
+
+.poltrona-numero {
+  display: block;
+  text-align: center;
+}
+
+.modal-title, #total {
+  color: #2C2F33;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus, button:focus {
+  outline: 3px solid var(--cor-primaria);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    left: 10%;
+    font-size: 0.9rem;
+  }
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .card img {
+    width: 100%;
+  }
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-primaria);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-secundaria);
+}
+
+#horario {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 10px 10px rgb(124, 124, 124);
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+table {
+  width: 100%;
+  padding: 20px;
+  border-collapse: collapse;
+  
+}
+
+h2 {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+td { 
+  border: 1px solid gray;
+}
+
+th:empty {
+  background-color: transparent;
+  border: 10px;
+}
+
